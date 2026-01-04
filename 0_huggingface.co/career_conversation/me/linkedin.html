@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - LinkedIn Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #000;
+            padding: 40px;
+            background: white;
+            font-size: 11pt;
+        }
+        
+        .header {
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 24pt;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        
+        .tagline {
+            font-size: 11pt;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .location {
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        .contact-section {
+            background: #f3f6f8;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 3px;
+        }
+        
+        .contact-section h2 {
+            font-size: 12pt;
+            margin-bottom: 5px;
+            color: #0073b1;
+        }
+        
+        .contact-info div {
+            font-size: 10pt;
+            margin: 2px 0;
+        }
+        
+        .section {
+            margin: 15px 0;
+        }
+        
+        h2 {
+            font-size: 14pt;
+            color: #000;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 3px;
+            margin: 15px 0 10px 0;
+        }
+        
+        h3 {
+            font-size: 12pt;
+            margin: 10px 0 3px 0;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 8px 0 2px 0;
+        }
+        
+        .duration {
+            font-size: 10pt;
+            color: #666;
+            font-style: italic;
+            margin: 2px 0;
+        }
+        
+        .company-location {
+            font-size: 10pt;
+            color: #666;
+            margin: 2px 0 8px 0;
+        }
+        
+        .description {
+            font-size: 10pt;
+            margin: 5px 0;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 5px 0 5px 20px;
+        }
+        
+        li {
+            font-size: 10pt;
+            margin: 3px 0;
+        }
+        
+        .skills-list {
+            margin: 5px 0;
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            background: #e1ecf4;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 9pt;
+            color: #0073b1;
+            margin: 3px 5px 3px 0;
+        }
+        
+        .page-number {
+            text-align: right;
+            font-size: 9pt;
+            color: #999;
+            margin-top: 20px;
+        }
+        
+        .button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .download-btn {
+            padding: 12px 24px;
+            background: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .download-btn:hover {
+            background: #005582;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .button-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="download-btn" onclick="window.print()">📄 Download as PDF</button>
+    </div>
+
+    <div class="header">
+        <h1>John Doe</h1>
+        <div class="tagline">Senior Product Manager at TechVision Solutions, experienced in B2B SaaS and enterprise software products</div>
+        <div class="location">San Francisco, California, United States</div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div>Email: john.doe@email.com</div>
+            <div>LinkedIn: www.linkedin.com/in/johndoe</div>
+            <div>Website: johndoeportfolio.com</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Top Skills</h2>
+        <div class="skills-list">
+            <span class="skill-tag">Product Management</span>
+            <span class="skill-tag">Agile Methodologies</span>
+            <span class="skill-tag">SaaS</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Roadmap Planning</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <div class="description">
+            • Certified Scrum Product Owner (CSPO)<br>
+            • AWS Certified Solutions Architect - Associate
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <div class="description">
+            I'm a product leader with a passion for building software that solves real business problems. Over the past decade, I've worked across fintech, healthcare tech, and enterprise SaaS, leading cross-functional teams to deliver products that users actually love.
+        </div>
+        <div class="description">
+            I started my career as a software developer, which gave me the technical foundation to bridge the gap between engineering teams and business stakeholders. These days, I spend most of my time talking to customers, analyzing data, and working with designers and engineers to ship features that move the needle.
+        </div>
+        <div class="description">
+            Outside of work, I'm an avid runner and have completed 5 marathons. I also volunteer with Code for America, helping civic organizations leverage technology to serve their communities better.
+        </div>
+        <div class="description">
+            I believe the best products come from diverse teams who listen to users, iterate quickly, and aren't afraid to kill features that aren't working. If you're building something interesting in the B2B space, I'd love to connect!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        
+        <h3>TechVision Solutions</h3>
+        <div class="job-title">Senior Product Manager</div>
+        <div class="duration">March 2021 - Present (4 years 1 month)</div>
+        <div class="company-location">San Francisco, California, United States</div>
+        <div class="description">
+            Leading product strategy and execution for TechVision's enterprise analytics platform, serving mid-market and enterprise customers across retail, finance, and healthcare sectors.
+        </div>
+        <ul>
+            <li>Launched v3.0 of our flagship analytics dashboard, resulting in 40% increase in user engagement and 25% reduction in customer churn</li>
+            <li>Manage roadmap prioritization for a product generating $15M ARR</li>
+            <li>Lead cross-functional team of 8 engineers, 2 designers, and 1 data analyst</li>
+            <li>Implemented new customer feedback loop that reduced time-to-insight from quarterly to weekly cycles</li>
+        </ul>
+        <div class="description">
+            Our tech stack includes React, Node.js, PostgreSQL, and AWS services. We ship new features bi-weekly using agile methodologies.
+        </div>
+
+        <h3>MediConnect Health</h3>
+        <div class="job-title">Product Manager</div>
+        <div class="duration">June 2018 - February 2021 (2 years 9 months)</div>
+        <div class="company-location">Boston, Massachusetts, United States</div>
+        <div class="description">
+            Built and launched telehealth scheduling platform connecting patients with healthcare providers. Grew product from 0 to 50,000+ active users across 12 states.
+        </div>
+        <ul>
+            <li>Defined product vision and roadmap for patient-facing mobile app and provider web portal</li>
+            <li>Worked closely with compliance team to ensure HIPAA compliance across all features</li>
+            <li>Led user research initiatives including 100+ customer interviews and usability tests</li>
+            <li>Coordinated with engineering team of 6 to deliver MVP in 4 months</li>
+        </ul>
+        <div class="description">
+            Product was acquired by a larger healthcare platform in 2021.
+        </div>
+
+        <h3>FinanceHub Inc.</h3>
+        <div class="job-title">Associate Product Manager</div>
+        <div class="duration">January 2016 - May 2018 (2 years 5 months)</div>
+        <div class="company-location">New York, New York, United States</div>
+        <div class="description">
+            Supported senior PM on expense management software for small businesses. Learned the fundamentals of product management including user research, requirements gathering, and agile development.
+        </div>
+        <ul>
+            <li>Conducted competitive analysis of 15+ products in expense management space</li>
+            <li>Managed backlog of 200+ user stories and feature requests</li>
+            <li>Facilitated sprint planning and retrospectives with engineering team</li>
+            <li>Launched mobile app companion that achieved 4.5 star rating in app stores</li>
+        </ul>
+
+        <h3>Accenture</h3>
+        <div class="job-title">Technology Consultant</div>
+        <div class="duration">July 2013 - December 2015 (2 years 6 months)</div>
+        <div class="company-location">Chicago, Illinois, United States</div>
+        <div class="description">
+            Worked with Fortune 500 clients on digital transformation initiatives. Gained exposure to various industries including retail, manufacturing, and financial services.
+        </div>
+        <ul>
+            <li>Led requirements gathering workshops with C-level stakeholders</li>
+            <li>Created technical specifications and user stories for development teams</li>
+            <li>Managed delivery of CRM implementation for major retail client ($2M project)</li>
+            <li>Traveled to client sites across North America 60% of the time</li>
+        </ul>
+
+        <h3>Freelance Web Developer</h3>
+        <div class="job-title">Self-Employed</div>
+        <div class="duration">September 2011 - June 2013 (1 year 10 months)</div>
+        <div class="company-location">Remote</div>
+        <div class="description">
+            Built websites and web applications for small businesses and nonprofits while completing my degree. Developed skills in full-stack web development and client management.
+        </div>
+        <ul>
+            <li>Completed 15+ projects including e-commerce sites, business websites, and custom web applications</li>
+            <li>Technologies used: HTML, CSS, JavaScript, PHP, WordPress, MySQL</li>
+            <li>Managed entire project lifecycle from requirements to deployment</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        
+        <h3>University of Michigan</h3>
+        <div class="job-title">Bachelor of Science in Computer Science</div>
+        <div class="duration">2009 - 2013</div>
+        <div class="description">
+            <strong>Relevant Coursework:</strong> Software Engineering, Database Systems, Human-Computer Interaction, Algorithms
+        </div>
+        <div class="description">
+            <strong>Activities:</strong> Michigan Hackers (Vice President 2012-2013), Intramural Soccer
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Certifications</h2>
+        
+        <h3>Certified Scrum Product Owner (CSPO)</h3>
+        <div class="description">
+            Scrum Alliance · Issued March 2019
+        </div>
+
+        <h3>AWS Certified Solutions Architect - Associate</h3>
+        <div class="description">
+            Amazon Web Services · Issued November 2020 · Expires November 2026
+        </div>
+
+        <h3>Product Management Certificate</h3>
+        <div class="description">
+            General Assembly · Completed January 2016
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Volunteer Experience</h2>
+        
+        <h3>Code for America</h3>
+        <div class="job-title">Brigade Member</div>
+        <div class="duration">January 2022 - Present (3 years 3 months)</div>
+        <div class="description">
+            Contributing product management expertise to civic tech projects. Currently working on an affordable housing finder tool for San Francisco residents.
+        </div>
+    </div>
+</body>
+</html>
